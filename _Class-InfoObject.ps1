@@ -16,3 +16,20 @@ class InfoObject
         $this.User = $User
         }
     }
+
+#Here is one from Ed Wilson (Hey Scripting Guy)
+# https://blogs.technet.microsoft.com/heyscriptingguy/2015/09/01/powershell-5-create-simple-class/
+
+Class Car {
+    [string] $Vin
+    static [int] $NumberOfWheels = 4
+    [int] $NumberOfDoors
+    [datetime] $Year
+    [string] $Model
+}
+
+$Chevy = New-Object car
+$chevy::NumberOfWheels
+$Chevy.Vin = 123456789
+$MyCar = $Chevy.Vin
+$MyCar   #(will show the vin number)
