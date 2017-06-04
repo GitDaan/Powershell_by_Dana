@@ -1,0 +1,1 @@
+﻿Get-CimInstance -ClassName win32_service -Filter "startmode = 'Auto' AND state != 'running'" | Select-Object Name, StartName
