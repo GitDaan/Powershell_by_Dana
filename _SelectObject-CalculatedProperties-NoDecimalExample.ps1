@@ -1,1 +1,0 @@
-﻿Get-ChildItem  C:\users\windaan\documents\PowerShell\Scripts | Select-Object Name, @{Name="Kb";Expression={ "{0:N0}" -f ($_.Length / 1Kb) }}

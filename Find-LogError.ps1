@@ -1,7 +1,7 @@
 ﻿# Finds entries labeled "error" in the event log you specify starting from the date you enter to the most recent
 # Example: FindLogErrors Microsoft-Windows-TwinUI/Operational 3/18/2017 (note the example is for a deeply buried log) 
  
-function FindLogErrors($logname, $fromDate) {
+function Find-LogError($logname, $fromDate) {
 Get-WinEvent -LogName $logname -MaxEvents 10 | Where-Object {$_.TimeCreated -gt $fromDate -and $_.LevelDisplayName -eq "Error"}
 }
 
